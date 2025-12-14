@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Chebby 🌻</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffb347, #ffcc33);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+  }
+  .card {
+    background: rgba(0,0,0,0.25);
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 350px;
+    animation: fadeIn 2s ease;
+    z-index: 2;
+    position: relative;
+  }
+  h1 {
+    margin-bottom: 10px;
+  }
+  .lyrics {
+    font-style: italic;
+    margin: 20px 0;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 2s;
+  }
+  .message {
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 4s;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .sunflower {
+    position: absolute;
+    width: 50px;
+    animation: float 6s infinite;
+  }
+  @keyframes float {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(180deg); }
+    100% { transform: translateY(0) rotate(360deg); }
+  }
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.25; /* soft overlay so card is visible */
+    pointer-events: none; /* so user can interact with page */
+  }
+</style>
+</head>
+<body>
+
+<img src="https://i.imgur.com/Xf6uH0K.png" class="sunflower" style="top:20%; left:10%;">
+<img src="https://i.imgur.com/Xf6uH0K.png" class="sunflower" style="top:50%; left:80%;">
+<img src="https://i.imgur.com/Xf6uH0K.png" class="sunflower" style="top:70%; left:40%;">
+
+<div class="card">
+  <h1>Chebby 🌻</h1>
+
+  <div class="lyrics">
+    “You’re the sunflower, I think your love would be too much”
+  </div>
+
+  <div class="message">
+    <p>
+      Every time I hear this song, I think of you.<br>
+      You bring light and happiness into my life.<br><br>
+      I love you forever 💛
+    </p>
+  </div>
+</div>
+
+<!-- YouTube embed (Sunflower by Swae Lee & Post Malone) -->
+<iframe src="https://www.youtube.com/embed/apXoWvfEYVU?autoplay=1&loop=1&playlist=apXoWvfEYVU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</body>
+</html>
